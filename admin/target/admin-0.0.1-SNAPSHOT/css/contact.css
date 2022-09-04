@@ -1,0 +1,365 @@
+/*背景*/
+.background{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 80px;
+	z-index: -10;
+	opacity: 1;
+}
+img{
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+}
+/*联系信息*/
+.center{
+	margin:0 auto;
+	width: 1000px;
+	height: 889px;
+	background-color: white;
+	z-index: 10;
+	opacity: 0.9;
+}
+.center-item1{
+	width: 800px;
+	height: 250px;
+	border-bottom: 2px solid rgb(234,234,234);
+	margin:0 auto;
+	padding: 0;
+}
+.center-item1-head{
+	font-size: 42px;
+	padding: 30px;
+	text-align: center;
+}
+.center-item1-tel,.center-item1-adr{
+	font-size: 18px;
+	padding: 10px;
+	text-align: center;
+}
+/*门店信息展示*/
+.center-item2{
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+
+}
+.shop-fz,.shop-yt{
+	width:800px;
+	height: 250px;
+}
+.shop-image{
+	width: 350px;
+	height: 200px;
+	padding-top: 50px;
+	display: inline-block;
+}
+.show-image img{
+	width: 350px; 
+	height: 200px;
+}
+.shop-message{
+	display: inline-block;
+	padding-left: 50px;
+}
+.shop-message>p{
+	color: rgb(119,119,119);
+	font-size: 18px;
+	padding-top: 13px;
+}
+h1{
+	color: rgb(34,152,244);
+	font-family: "黑体";
+}
+
+/*******************************************/
+
+/* Medium desktop :1366px. */
+@media (min-width: 1200px) and (max-width: 1680px){
+	/*联系信息*/
+	.center{
+		width: 100%;
+		height: 720px;
+	}
+	.center-item1{
+		width: 80%;
+		height: 180px;
+		margin:0 auto;
+		padding: 0;
+	}
+	.center-item1-head{
+		font-size: 30px;
+		padding-top: 40px;
+		text-align: center;
+	}
+	.center-item1-tel,.center-item1-adr{
+		font-size: 16px;
+		padding: 0px;
+		text-align: center;
+	}
+	/*门店信息展示*/
+	.center-item2{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.shop-fz,.shop-yt{
+		width:100%;
+		height: 230px;
+	}
+
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px){
+	.background{	
+		left: 0;
+		top: 0;
+	}
+	/*联系信息*/
+	.center{
+		width: 100%;
+	}
+	.center-item1{
+		width: 80%;
+		height: 160px;
+		margin:0 auto;
+		padding: 0;
+	}
+	.center-item1-head{
+		font-size: 24px;
+		padding-top: 30px;
+		text-align: center;
+	}
+	.center-item1-tel,.center-item1-adr{
+		font-size: 16px;
+		padding: 0px;
+		text-align: center;
+	}
+	/*门店信息展示*/
+	.center-item2{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.shop-fz,.shop-yt{
+		width:100%;
+		height: 160px;
+	}
+	.shop-image{
+		width: 280px;
+		height: 140px;
+		padding-top: 20px;
+		display: inline-block;
+	}
+	.show-image img{
+		width: 100%; 
+		height: 100%;
+	}
+	.shop-message{
+		display: inline-block;
+		padding-left: 50px;
+	}
+	.shop-message>p{
+		color: rgb(119,119,119);
+		font-size: 14px;
+		padding-top: 8px;
+	}
+	h1{
+		font-size: 18px;
+		color: rgb(34,152,244);
+		font-family: "黑体";
+	}
+}
+/* Tablet Layout :768px. */
+@media (min-width: 768px) and (max-width: 991px){
+	/*背景*/
+	.background{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		left: 0;
+		top: 80px;
+		z-index: -10;
+		opacity: 1;
+	}
+	/*联系信息*/
+	.center{
+		width: 100%;
+		height: 889px;
+	}
+	.center-item1{
+		width:90%;
+		height: 220px;
+	}
+	.center-item1-head{
+		font-size: 30px;
+		padding-top: 50px;
+		text-align: center;
+	}
+	.center-item1-tel,.center-item1-adr{
+		font-size: 16px;
+		padding: 10px;
+		text-align: center;
+	}
+	/*门店信息展示*/
+	.center-item2{
+		width: 80%；
+		height: 500px;
+		margin: 0 auto;
+
+	}
+	.shop-fz,.shop-yt{
+		width:100%;
+		height: 250px;
+		margin-left: 25px;
+	}
+	.shop-image{
+		width: 350px;
+		height: 200px;
+		padding-top: 50px;
+		display: inline-block;
+	}
+	.show-image img{
+		width: 100%; 
+		height: 100%;
+	}
+	.shop-message{
+		display: inline-block;
+		padding-left: 30px;
+	}
+}
+/* small mobile :320px. */
+@media (max-width: 767px){
+
+	/*背景*/
+	.background{
+		top: 0;
+		left: 0;
+	}
+	/*联系信息*/
+	.center{
+		margin:0 auto;
+		width: 100%;
+		height: 950px;
+	}
+	.center-item1{
+		width: 80%;
+		height: 180px;
+	}
+	.center-item1-head{
+		font-size: 24px;
+		padding: 20px;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.center-item1-tel,.center-item1-adr{
+		font-size: 16px;
+		padding: 10px;
+		text-align: center;
+	}
+	/*门店信息展示*/
+	.center-item2{
+		width:80%;
+		margin: 0 auto;
+	}
+	.shop-fz,
+	.shop-yt{
+		display: block;
+		width:100%;
+		height:350px; 
+	}
+	.shop-image{
+		width: 100%;
+		height: 200px;
+		padding-top: 20px;
+		display: block;
+	}
+	.show-image img{
+		width: 100%; 
+		height: 200px;
+	}
+	.shop-message{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+	}
+	.shop-message>p{
+		color: rgb(119,119,119);
+		font-size: 16px;
+		padding: 5px;
+		margin: 0;
+	}
+	h1{
+		text-align: center;
+		font-size: 18px;
+	}
+}
+@media (max-width: 280px){
+	/*背景*/
+	.background{
+		top: 0;
+		left: 0;
+	}
+	/*联系信息*/
+	.center{
+		margin:0 auto;
+		width: 100%;
+		height: 900px;
+	}
+	.center-item1{
+		width: 80%;
+		height: 180px;
+	}
+	.center-item1-head{
+		font-size: 18px;
+		padding: 20px;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.center-item1-tel,.center-item1-adr{
+		font-size: 14px;
+		padding: 10px;
+		text-align: center;
+	}
+	/*门店信息展示*/
+	.center-item2{
+		width:80%;
+		margin: 0 auto;
+	}
+	.shop-fz,
+	.shop-yt{
+		display: block;
+		width:100%;
+		height:320px; 
+	}
+	.shop-image{
+		width: 100%;
+		height: 150px;
+		padding-top: 20px;
+		display: block;
+	}
+	.show-image img{
+		width: 100%; 
+		height: 100%;
+	}
+	.shop-message{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+	}
+	.shop-message>p{
+		color: rgb(119,119,119);
+		font-size: 14px;
+		padding: 5px;
+		margin: 0;
+	}
+	h1{
+		text-align: center;
+		font-size: 18px;
+	}
+}

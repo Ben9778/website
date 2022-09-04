@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>天叶丹云官方门户</title>
+	<meta name="keywords" content="天叶丹云,三叶青,关于三叶青,天叶丹云官网,三叶青是什么,天叶丹云公司怎么样,永泰三叶青">
+	<meta name="description" content="福建天叶丹云生物科技有限公司专注于三叶青产业链，集种植、研发、销售于一体，为客户提供纯天然农副产品。">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="author" content="黄滨">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="http://www.fjtydy.com/picture/client/logo-ico.png">
+	<link rel="stylesheet" type="text/css" href="http://www.fjtydy.com/css/index.css">
+	<link rel="stylesheet" type="text/css" href="http://www.fjtydy.com/css/public.css">
+	<script type="text/javascript" src="http://www.fjtydy.com/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<!--脚本未被执行时提示文本-->
+	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+	<!--页面头部区域-->
+	<div id="header">
+		<!-- 企业LOGO-->
+		<div class="logo-area">
+			<a href="http://www.fjtydy.com/index.html">
+				<img src="http://www.fjtydy.com/picture/client/logo.png" alt="天叶丹云">
+			</a>
+		</div>
+		<!--导航-->
+		<div class="navigation">
+			<ul class="nav">
+				<li>
+					<a href="http://www.fjtydy.com/index.html" style="color: skyblue">首页</a>
+				</li>
+				<li>
+					<a href="http://www.fjtydy.com/queryProduct">产品展示</a>
+				</li>
+				<li>
+					<a href="http://www.fjtydy.com/aboutUs.html">关于我们</a>
+				</li>
+				<li>
+					<a href="http://www.fjtydy.com/invite.html">招商合作</a>
+				</li>
+				<li>
+					<a href="http://www.fjtydy.com/queryNews">新闻动态</a>
+				</li>
+				<li>
+					<a href="http://www.fjtydy.com/contact.html">联系我们</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--页面中间区域-->
+	<div id="center">
+		<!--横幅轮播-->
+		<div class="container">
+			<img id="container-img" src="http://www.fjtydy.com/picture/client/index-banner1.jpg">
+			<!--左右箭头-->
+			<div class="arrow-left" onclick="prev()">
+				<img src="http://www.fjtydy.com/picture/client/arrow-left.png">
+			</div>
+			<div class="arrow-right" onclick="next()">
+				<img src="http://www.fjtydy.com/picture/client/arrow-right.png">
+			</div>
+			<!--圆点-->
+			<ul class="indexes">
+				<li class="active"></li>
+				<li></li>
+			</ul>
+		</div>
+		<!--企业介绍-->
+		<div class="cultures">
+			<div class="title1">
+				<h2>天叶文化</h2>
+				<p>Culture</p>
+			</div>
+			<div class="title2" id="title">
+				<span>Our Culture</span>
+			</div>
+			<div class="aboutImg" id="img" onmouseover="moveLeft()" onmouseout="moveBack()">
+				<img src="http://www.fjtydy.com/picture/client/culture.jpg" alt="加载中">
+			</div>
+			<div class="article" id="article" onmouseover="articleUp()" onmouseout="articleBack()">
+				<h3>天叶丹云简介</h3>
+				<div class="article-item">
+					<p>
+						福建天叶丹云生物科技有限公司，天叶丹云经营管理团队不忘初心，勇于担当，敢于作为，传承创新发展，用大国工匠精神做国家品质，以创新创业意志铸长盛产业，积极构建以传统中药、生物制药为核心，以保健药品、保健食品流通为补充的大健康产业发展战略。致力把天叶丹云打造成国内一流的健康养生品牌，为更多人的健康服务。
+					</p>
+					<p>
+						不忘初心，砥砺前行。新时代、新作为，谱新篇，天叶人将以十九大精神为统领，秉持、传承和发扬中医药文化的历史使命，围绕新时代社会的主要矛盾，推动大健康产业发展战略，深化改革创新，为社会提供更精准、更优质、更高效的产品和服务，把“天叶丹云”打造成大健康领域的领导品牌，为“发扬中医药文化”目标而不懈努力。
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--基地展示--> 
+		<div class="base">
+			<div class="base-title">天叶基地</div>
+			<div class="base-item">
+				<!--第一个-->
+				<div class="base-item1 display" onclick="show1()">
+					<div class="display-title">
+						<span>赤岸铳楼群</span>
+						<span class="change"></span>
+					</div>
+					<div class="base-item1-img">
+						<img src="http://www.fjtydy.com/picture/client/base1.jpg">
+					</div>
+					<div class="shadow" id="shadow1"></div>
+					<div class="word" id="word1">百年历史特色铳楼群</div>
+				</div>
+				<!--第二个-->
+				<div class="base-item2 display" onclick="playVideo1()">
+					<div class="display-title">
+						<span>乡村会客厅</span>
+						<span class="change"></span>
+					</div>
+					<div class="base-item2-video">
+						<img src="http://www.fjtydy.com/picture/client/base4.jpg">
+					</div>
+					<div class="shadow" id="shadow2"></div>
+					<div class="word" id="word2">
+						<img src="http://www.fjtydy.com/picture/client/play.png" >
+						<p>大赤岸乡村会客厅是旧供销社活化改造而成</p>
+					</div>
+				</div>
+				<!--第三个-->
+				<div class="base-item3 display" onclick="playVideo2()">
+					<div class="display-title">
+						<span>赤岸的故事</span>
+						<span class="change"></span>
+					</div>
+					<div class="base-item2-video">
+						<img src="http://www.fjtydy.com/picture/client/base7.jpg">
+					</div>
+					<div class="shadow" id="shadow3"></div>
+					<div class="word" id="word3">
+						<img src="http://www.fjtydy.com/picture/client/play.png" >
+						<p>大赤岸介绍</p>
+					</div>
+				</div>
+				<!--第四个-->
+				<div class="base-item4 display" onclick="show2()">
+					<div class="display-title">
+						<span>水碓房酒吧</span>
+						<span class="change"></span>
+					</div>
+					<div class="base-item1-img">
+						<img src="http://www.fjtydy.com/picture/client/base8.jpg">
+					</div>
+					<div class="shadow" id="shadow4" onclick="nav()"></div>
+					<div class="word" id="word4">乡村酒吧陶冶情操之地</div>
+				</div>
+			</div>
+		</div>
+		<!--遮挡层-->
+		<div id="hid"></div>
+		<!--视频播放-->
+		<div id="autoplay1">
+			<div class="autoplay1-title">乡村会客厅</div>
+			<video controls="controls" muted="muted" autoplay="autoplay">
+				<source src="http://www.fjtydy.com/video/video1.mp4" type="video/mp4">
+				</video>
+				<div class="autoplay1-content">
+					<p>
+						乡村会客厅是赤岸村把闲置的集体供销社进行活化利用，将其打造成集餐饮、民宿、展销、会议等多功能于一体的综合体。一层改造成乡村会客厅、美德银行与杂货铺，还预留了空间作为中草药或农耕博物馆，二层是乡村创客空间、培训基地和知青旅舍，后院则改造成人民公社大食堂。
+					</p>
+				</div>
+			</div>
+			<div id="autoplay2">
+				<div class="autoplay2-title">赤岸的故事</div>
+				<video controls="controls" muted="muted" autoplay="autoplay">
+					<source src="http://www.fjtydy.com/video/video2.mp4" type="video/mp4">
+					</video>
+					<div class="autoplay2-content">
+						<p>
+							赤岸村，位于永泰县丹云乡，是福州方言“七雁”的谐音，相传乡中有七座展翅俯冲、形态各异的雁形小山而得名。赤岸文化遗产资源相当丰富。2019年，赤岸村就被列入第五批中国传统村落名录，其中省级文物保护单位4处，历史建筑14处，文保单位和历史建筑总建筑面积达12881m²。
+						</p>
+					</div>
+				</div>
+				<!--图文展示-->
+				<div id="dis1">
+					<div class="dis1-title">赤岸铳楼群</div>
+					<div class="dis1-img">
+						<img src="http://www.fjtydy.com/picture/client/base1.jpg">
+					</div>
+					<div class="dis1-content">
+						<p>
+							铳[chòng]楼，是具有防御功能的土堡群，建于清朝时期，现存扁店铳楼、前店铳楼、祥林店铳楼、则水店铳楼4座铳楼。放眼望去，100多年前的铳楼群矗立在溪旁，作为赤岸的时光标本，它见证了赤岸往昔的繁华。
+						</p>
+					</div>
+				</div>
+				<div id="dis2">
+					<div class="dis2-title">水碓房酒吧</div>
+					<div class="dis2-img">
+						<img src="http://www.fjtydy.com/picture/client/base10.jpg">
+					</div>
+					<div class="dis2-content">
+						<p>
+							水碓房原是村民们舂米的地方，上个世纪八十年末颓废倒塌，2019年才被村里重新规划使用，他们保留了古老的石墙，复刻了缩小版的水车，对城里人来说，水车是陌生又稀罕的有趣物件，来赤岸游玩的人90%都会来看它。
+						</p>
+						<p>
+							邀三五好友汇聚与此，就着音乐，喝着小酒，身心俱欢。又或者临窗而坐，一面喝着小酒，一面欣赏着远处的田园风光，静静地享受着一个人独处的惬意时光，岂不快哉。
+						</p>
+					</div>
+				</div>
+				<!--恢复原页面-->
+				<div id="close" onclick="closePlay()">×</div>
+
+				<!--新闻中心-->
+				<div class="new-center">
+					<!--标题-->
+					<div class="new-title">
+						天叶动态
+					</div>
+					<!--左边新闻-->
+					<div class=new-left>
+						<div class="new-left-img">
+							<a target="_blank">
+								<img id="loopImg">
+							</a> 
+						</div>
+						<div class="new-left-title">
+							<a href="" target="_blank"></a>
+						</div>
+					</div>
+					<!--右边新闻-->
+					<div class=new-right>
+						<div class="new-right-top">
+							<div class="top-date"></div>
+							<div class="top-title">
+								<a target="_blank"></a>
+							</div>
+							<div class="top-body">
+								<span></span>
+							</div>
+							<div class="more">
+								<a href="http://www.fjtydy.com/queryNews" target="_blank">更多>></a>
+							</div>
+						</div>
+						<div class="new-right-body">
+							<ul>
+								<li>
+									<a target="_blank"></a>
+									<span></span>
+								</li>
+								<li>
+									<a target="_blank"></a>
+									<span></span>
+								</li>
+								<li>
+									<a target="_blank"></a>
+									<span></span>
+								</li>
+								<li>
+									<a target="_blank"></a>
+									<span></span>
+								</li>
+								<li>
+									<a target="_blank"></a>
+									<span></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--页面底部区域-->
+			<div id="footer">
+				<div class="footer-item">
+					<div class="contact">
+						<p>办公地址: 福州市仓山区金桔一路115号</p>
+						<p>种植地址：福州市永泰县丹云乡赤岸村</p>
+						<p>服务热线: 0591-86258511</p>
+						<p>
+							<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35012502000143" target="_blank" style="color: rgb(255,255,255);">
+								<img src="http://www.fjtydy.com/picture/client/bak.png" style="padding-right: 5px;">闽公网安备 35012502000143号
+							</a>
+							<a href="https://beian.miit.gov.cn" target="_blank" style="color: rgb(255,255,255);margin-left: 10px;">闽ICP备2022011206号</a>
+						</p>
+						<p>Copyright © 2022 福建天叶丹云生物科技有限公司. All Rights Reserved. 天叶公司 版权所有</p>
+					</div>
+					<div class="gzh">
+						<img src="http://www.fjtydy.com/picture/client/public.jpg" style="width: 119px; height: 117px;">
+						<p>微信公众号</p>
+					</div>
+				</div>
+			</div>
+			<!--回顶部-->
+			<div class="backTop">
+				<a href="#">
+					<img src="http://www.fjtydy.com/picture/client/back-top.png" title="回到顶部">
+				</a>
+			</div>
+			<script type="text/javascript" src="http://www.fjtydy.com/js/index.js"></script>			
+		</body>
+		</html>

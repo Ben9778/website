@@ -1,0 +1,413 @@
+#center{
+	width: 100%;
+}
+/*横幅*/
+.banner{
+	width: 100%;
+	height: 600px;
+}
+.banner img{
+	width: 1920px;
+	height: 600px;
+}
+/*内容*/
+.contents{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.contents-title{
+	width: 100%;
+	margin-top: 80px;
+	text-align: center;
+	overflow: hidden;
+}
+.contents-title span{
+	position: relative;
+	font-size: 60px;
+	color: rgb(51,51,51);
+	animation-name: moveUp;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	-webkit-animation-name: moveUp;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-name: moveUp;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: 1;
+	-o-animation-name: moveUp;
+	-o-animation-duration: 1s;
+	-o-animation-iteration-count: 1;
+	-ms-animation-name: moveUp;
+	-ms-animation-duration: 1s;
+	-ms-animation-iteration-count: 1;
+}
+.contents-title p{
+	position: relative;
+	font-size: 24px;
+	color: rgb(51,51,51);
+	animation-name: moveUp;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	-webkit-animation-name: moveUp;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-name: moveUp;
+	-moz-animation-duration: 1.5s;
+	-moz-animation-iteration-count: 1;
+	-o-animation-name: moveUp;
+	-o-animation-duration: 1.5s;
+	-o-animation-iteration-count: 1;
+	-ms-animation-name: moveUp;
+	-ms-animation-duration: 1.5s;
+	-ms-animation-iteration-count: 1;
+}
+/*从下往上淡入*/
+@keyframes moveUp{
+	from{
+		top:100px;
+		opacity: .1;
+	}
+	to{
+		top: 0px;
+		opacity: 1;
+	}
+}
+@-ms-keyframes moveUp{
+	from{
+		top:100px;
+		opacity: .1;
+	}
+	to{
+		top: 0px;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes moveUp{
+	from{
+		top:100px;
+		opacity: .1;
+	}
+	to{
+		top: 0px;
+		opacity: 1;
+	}
+}
+@-o-keyframes moveUp{
+	from{
+		top:100px;
+		opacity: .1;
+	}
+	to{
+		top: 0px;
+		opacity: 1;
+	}
+}
+@-moz-keyframes moveUp{
+	from{
+		top:100px;
+		opacity: .1;
+	}
+	to{
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+.contents-item{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+.contents-item-left img{
+	width: 900px;
+	height: 600px;
+}
+.contents-item-right{
+	width: 900px;
+	height: 600px;
+	background-color: rgb(246,246,246);
+}
+.contents-item-words{
+	
+	margin-top: 150px;
+}
+.contents-item-words p{
+	color: rgb(102,102,102);
+	font-size: 16px;
+	line-height: 2em;
+	padding-left: 100px;
+	padding-right: 120px;
+}
+
+
+/*******************************************/
+
+/* Medium desktop :1366px. */
+@media (min-width: 1200px) and (max-width: 1680px){
+	/*横幅*/
+	.banner{
+		width: 100%;
+		height: 600px;
+	}
+	.banner img{
+		width: 100%;
+		height: 100%;
+	}
+	/*内容*/
+	.contents{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.contents-title{
+		width: 100%;
+		margin-top: 80px;
+		text-align: center;
+		overflow: hidden;
+	}
+	
+	.contents-item-left{
+		width: 45%;
+		height: 500px;
+	}
+	.contents-item-left img{
+		width:100%;
+		height: 100%;
+	}
+	.contents-item-right{
+		width: 50%;
+		height: 500px;
+	}
+	.contents-item-words{
+		margin: 0 auto;
+		padding-right: 100px;
+		padding-top: 30px;
+	}
+	.contents-item-words p{
+		font-size: 14px;
+	}
+
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px){
+	/*横幅*/
+	.banner{
+		width: 100%;
+		height: 450px;
+	}
+	.banner img{
+		width: 100%;
+		height: 100%;
+	}
+	/*内容*/
+	.contents{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.contents-title{
+		width: 100%;
+		margin-top: 80px;
+		text-align: center;
+		overflow: hidden;
+	}
+	
+	.contents-item-left{
+		width: 45%;
+		height: 400px;
+	}
+	.contents-item-left img{
+		width:100%;
+		height: 100%;
+	}
+	.contents-item-right{
+		width: 50%;
+		height:400px;
+	}
+	.contents-item-words{
+		margin: 0 auto;
+		padding-right: 0;
+		padding-top: 30px;
+	}
+	.contents-item-words p{
+		font-size: 14px;
+		line-height: 1.5em;
+	}
+}
+/* Tablet Layout :768px. */
+@media (min-width: 768px) and (max-width: 991px){
+	/*横幅*/
+	.banner{
+		width: 100%;
+		height: 450px;
+	}
+	.banner img{
+		width: 100%;
+		height: 100%;
+	}
+	/*内容*/
+	.contents{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.contents-title{
+		width: 100%;
+		margin-top: 80px;
+		text-align: center;
+		overflow: hidden;
+	}
+	.contents-title span{
+		font-size: 40px;
+	}
+	.contents-title p{
+		font-size: 18px;
+	}
+	.contents-item{
+		display:flex;
+		justify-content: space-between;
+		margin: 10px auto;
+	}
+	.contents-item-left{
+		width: 50%;
+		height: 320px;
+	}
+	.contents-item-left img{
+		width:100%;
+		height: 100%;
+	}
+	.contents-item-right{
+		width: 50%;
+		height:320px;
+	}
+	.contents-item-words{
+		width: 100%;
+		margin-top: 0;
+	}
+	.contents-item-words p{
+		margin:0;
+		padding: 10px;
+		font-size: 12px;
+		line-height: 2em;
+	}
+}
+/* small mobile :320px. */
+@media (max-width: 767px){
+	/*横幅*/
+	.banner{
+		width: 100%;
+		height: 200px;
+	}
+	.banner img{
+		width: 100%;
+		height: 100%;
+	}
+	/*内容*/
+	.contents{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.contents-title{
+		width: 100%;
+		margin-top: 50px;
+		text-align: center;
+		overflow: hidden;
+	}
+	.contents-title span{
+		font-size: 40px;
+	}
+	.contents-title p{
+		font-size: 18px;
+	}
+	.contents-item{
+		width: 100%;
+		display:block;
+		margin: 0 auto;
+	}
+	.contents-item-left{
+		width: 100%;
+		height: 300px;
+	}
+	.contents-item-left img{
+		width:100%;
+		height: 100%;
+	}
+	.contents-item-right{
+		margin-top: 0;
+		width: 100%;
+		height:350px;
+		background-color: rgb(246,246,246);
+	}
+	.contents-item-words{
+		width: 100%;
+		margin-top: 0;
+	}
+	.contents-item-words p{
+		margin:0;
+		padding: 15px;
+		font-size: 12px;
+		line-height: 2em;
+	}
+}
+@media (max-width: 280px){
+	/*横幅*/
+	.banner{
+		width: 100%;
+		height: 150px;
+	}
+	.banner img{
+		width: 100%;
+		height: 100%;
+	}
+	/*内容*/
+	.contents{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.contents-title{
+		width: 100%;
+		margin-top: 30px;
+		text-align: center;
+		overflow: hidden;
+	}
+	.contents-title span{
+		font-size: 30px;
+	}
+	.contents-title p{
+		font-size: 16px;
+	}
+	.contents-item{
+		width: 100%;
+		display:block;
+		margin: 0 auto;
+	}
+	.contents-item-left{
+		width: 100%;
+		height: 200px;
+	}
+	.contents-item-left img{
+		width:100%;
+		height: 100%;
+	}
+	.contents-item-right{
+		margin-top: 0;
+		width: 100%;
+		height:450px;
+		background-color: rgb(246,246,246);
+	}
+	.contents-item-words{
+		width: 100%;
+		margin-top: 0;
+	}
+	.contents-item-words p{
+		margin:0;
+		padding: 15px;
+		font-size: 12px;
+		line-height: 2em;
+	}
+}
